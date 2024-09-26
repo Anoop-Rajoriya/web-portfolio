@@ -13,6 +13,7 @@
   transform: translateY(26%);
   flex-shrink: 0;
   border: 2px solid var(--accent);
+  overflow: hidden;
 }
 
 .banner > .profile > img {
