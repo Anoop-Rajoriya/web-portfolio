@@ -1,0 +1,27 @@
+.projects {
+  /* padding-block: 12px; */
+}
+
+.projects > .heading {
+  color: var(--white-70);
+  border-bottom: 2px solid var(--primary);
+  text-transform: capitalize;
+  font-family: roboto-slab;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media (width > 400px) {
+  .projects > .heading {
+    font-size: 22px;
+  }
+}
+
+@media (width > 1020px) {
+  .projects > .heading {
+    font-size: 28px;
+    padding-inline: 16px;
+  }
+}

@@ -1,0 +1,150 @@
+.experiance {
+  padding-inline: 8px;
+  padding-block: 16px;
+}
+
+.experiance > .icon {
+  --size: 20px;
+  background-color: var(--accent);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: roboto-slab;
+  font-size: 16px;
+  font-weight: 700;
+  margin-block: 8px;
+}
+
+.experiance > .icon + p {
+  color: var(--white);
+  font-family: roboto-slab;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.experiance > .custom-elm {
+  color: var(--accent);
+  font-family: roboto-slab;
+  font-size: 90px;
+  font-weight: 500;
+  position: relative;
+  margin-block-start: 22px;
+}
+
+.experiance > .custom-elm > span {
+  font-size: 18px;
+  position: absolute;
+  transform: rotateZ(90deg);
+  text-transform: capitalize;
+  font-weight: 500;
+  top: 40px;
+  left: 33px;
+}
+
+.experiance > .p-tags {
+  color: var(--white-70);
+  font-family: roboto;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 400;
+  padding-block: 8px;
+}
+
+.experiance > .svg-container {
+  padding-block: 24px;
+}
+
+.experiance > .svg-container > img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  margin-bottom: 18px;
+}
+
+.experiance > .svg-container > p {
+  color: var(--white-70);
+  font-family: roboto-slab;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.experiance > .svg-container > p > span {
+  color: var(--white);
+}
+
+@media (width > 400px) {
+  .experiance > .custom-elm {
+    font-size: 112px;
+  }
+  .experiance > .custom-elm > span {
+    font-size: 22px;
+    top: 48px;
+    left: 40px;
+  }
+  .experiance > .p-tags {
+    font-size: 16px;
+  }
+}
+
+@media (width > 1020px) {
+  .experiance {
+    padding-inline: 16px;
+    padding-block: 22px;
+  }
+  .experiance > .icon + p {
+    font-size: 22px;
+  }
+
+  .experiance > .custom-elm {
+    font-size: 152px;
+  }
+
+  .experiance > .custom-elm > span {
+    font-size: 30px;
+    top: 68px;
+    left: 56px;
+  }
+
+  .experiance > .p-tags {
+    font-size: 18px;
+  }
+
+  .experiance > .svg-container {
+    padding-block: 16px;
+  }
+
+  .experiance > .svg-container > img {
+    --size: 60%;
+  }
+
+  .experiance > .svg-container > p {
+    font-size: 26px;
+  }
+}
+
+@media (width >= 1220px) {
+  .experiance > .icon + p {
+    font-size: 28px;
+  }
+
+  .experiance > .custom-elm {
+    margin-block-start: 0px;
+  }
+
+  .experiance > .p-tags {
+    font-size: 22px;
+  }
+
+  .experiance > .svg-container > img {
+    --size: 45%;
+    margin-bottom: 16px;
+  }
+}

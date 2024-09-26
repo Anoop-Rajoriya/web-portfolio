@@ -1,0 +1,65 @@
+.education {
+}
+
+.education > .heading {
+  color: var(--accent);
+  background-color: var(--primary);
+  text-transform: capitalize;
+  font-family: roboto-slab;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.education > .p-tags {
+  padding-inline: 8px;
+  margin-block-start: 12px;
+  color: var(--white-70);
+  text-transform: capitalize;
+  font-family: roboto;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.education > .p-tags > .date {
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.education > .p-tags > .name {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (width > 400px) {
+  .education > .heading {
+    font-size: 22px;
+  }
+  .education > .p-tags {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .education > .p-tags > .date,
+  .education > .p-tags > .name {
+    font-size: 16px;
+  }
+}
+
+@media (width > 1020px) {
+  .education > .heading {
+    font-size: 28px;
+  }
+
+  .education > .p-tags {
+    font-size: 18px;
+  }
+
+  .education > .p-tags > .date,
+  .education > .p-tags > .name {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --white-70: #ffffffb3;
+    --primary: #141e26;
+    --complemantry: #223240;
+    --accent: #f2e313;
+  
+    background-color: var(--black);
+  }
+
+  @font-face {
+    font-family: roboto-slab;
+    src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  }
+  
+  .components {
+    background-color: var(--primary);
+  }
+  
+  .banner {
+    background-color: var(--accent);
+  }
+  

@@ -1,0 +1,95 @@
+.banner {
+  padding-inline: 10px;
+  display: flex;
+  align-items: end;
+}
+
+.banner > .profile {
+  --size: 94px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--primary);
+  border-radius: 100%;
+  transform: translateY(26%);
+  flex-shrink: 0;
+  border: 2px solid var(--accent);
+}
+
+.banner > .profile > img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner > .intro {
+  color: #000;
+  padding-inline-start: 10px;
+  padding-block-end: 12px;
+  text-transform: capitalize;
+}
+
+.banner > .intro > h1 {
+  font-family: roboto-slab;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.banner > .intro > p {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+@media (width > 640px) {
+  .banner {
+    padding-inline: 6px;
+  }
+
+  .banner > .profile {
+    --size: 118px;
+  }
+
+  .banner > .intro {
+    margin-inline-start: 14px;
+  }
+
+  .banner > .intro > h1 {
+    font-size: 32px;
+  }
+
+  .banner > .intro > p {
+    font-size: 24px;
+  }
+}
+
+@media (width > 1020px) {
+  .banner {
+    padding-inline: 34px;
+  }
+
+  .banner > .profile {
+    --size: 128px;
+  }
+
+  .banner > .intro > h1 {
+    font-size: 38px;
+  }
+
+  .banner > .intro > p {
+    font-size: 28px;
+  }
+}
+
+@media (width >= 1220px) {
+  .banner {
+    padding-inline: 58px;
+  }
+
+  .banner > .intro {
+    margin-inline-start: 24px;
+  }
+
+  .banner > .intro > h1 {
+    font-size: 42px;
+  }
+}

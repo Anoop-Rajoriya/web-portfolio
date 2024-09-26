@@ -1,0 +1,57 @@
+.short-bio {
+  /* background-color: lightblue; */
+}
+
+.short-bio > .heading {
+  padding: 8px;
+  background-color: var(--accent);
+  font-family: roboto-slab;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--primary);
+  text-transform: capitalize;
+  margin-block-end: 6px;
+}
+
+.short-bio > .heading ~ p {
+  padding-inline: 8px;
+  font-family: roboto;
+  text-transform: capitalize;
+  color: var(--white-70);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.short-bio > .heading ~ p + p {
+  margin-top: 12px;
+}
+
+@media (width > 400px) {
+  .short-bio > .heading {
+    font-size: 22px;
+  }
+  .short-bio > .heading ~ p {
+    font-size: 16px;
+  }
+}
+
+@media (width > 1020px) {
+  .short-bio > .heading {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .short-bio > .heading ~ p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+@media (width >= 1220px) {
+  .short-bio > .heading ~ p {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}

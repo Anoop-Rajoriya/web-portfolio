@@ -1,0 +1,83 @@
+.personal {
+}
+
+.personal > .heading {
+  color: var(--white);
+  font-family: roboto-slab;
+  border-bottom: 2px solid var(--complementary);
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.personal > .p-tags {
+  padding: 8px;
+  color: var(--white-70);
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.personal > .icons {
+  padding: 8px;
+}
+
+.personal > .icons > div {
+  --size: 30px;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  margin-inline-end: 8px;
+}
+
+.personal > .icons > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (width > 400px) {
+  .personal > .heading {
+    font-size: 22px;
+  }
+  .personal > .p-tags {
+    font-size: 16px;
+  }
+}
+
+@media (width > 1020px) {
+  .personal > .heading {
+    font-size: 28px;
+    padding-inline: 16px;
+    margin-bottom: 12px;
+  }
+
+  .personal > .p-tags {
+    font-size: 18px;
+    padding-inline: 18px;
+    padding-block: 6px;
+  }
+
+  .personal > .icons {
+    margin-top: 8px;
+    margin-left: 14px;
+  }
+}
+
+@media (width >= 1220px) {
+  .personal > .p-tags {
+    font-size: 20px;
+  }
+
+  .personal > .icons {
+    margin-top: 10px;
+  }
+
+  .personal > .icons > div {
+    --size: 42px;
+  }
+}

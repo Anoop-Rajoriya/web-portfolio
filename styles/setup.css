@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --black-70: rgba(6, 1, 1, 0.7);
+  --white: #fff;
+  --white-70: #ffffffb3;
+  --white-20: #ffffff33;
+  --primary: #141e26;
+  --complementary: #223240;
+  --accent: #f2e313;
+
+  background-color: var(--black-70);
+}
+
+@font-face {
+  font-family: roboto-slab;
+  src: url(../assets/font\'s/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../assets/font\'s/Roboto-Regular.ttf);
+}
+
+.components {
+  background-color: var(--complementary);
+}
+
+.banner {
+  background-color: var(--accent);
+}
+
+.personal,
+.contacts,
+.skills {
+  background-color: var(--primary);
+}
