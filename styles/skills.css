@@ -179,13 +179,11 @@
   background-color: var(--nodejs);
 }
 
-@media (width > 400px) {
-  .skills > .heading {
-    font-size: 22px;
-  }
+@media (width >= 480px) {
   .skills > .graph > .pi-chart > .outer-circle {
-    --size: 152px;
+    --size: 148px;
   }
+
   .skills > .graph > .pi-chart > .outer-circle > .labels::before {
     font-size: 14px;
   }
@@ -194,66 +192,38 @@
   }
 }
 
-@media (width > 1020px) {
+@media (width >= 580px) {
   .skills > .heading {
-    font-size: 28px;
+    font-size: 24px;
   }
+  .skills > .graph > .markers > p {
+    font-size: 18px;
+  }
+}
 
+@media (width >= 641px) {
+  .skills > .graph > .markers > p {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1080px) {
   .skills > .graph {
     flex-direction: row;
-    padding-inline: 42px;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+  .skills > .graph > .pi-chart {
+    flex-grow: 0;
   }
 
   .skills > .graph > .pi-chart > .outer-circle {
-    --size: 212px;
+    --size: 162px;
   }
 
   .skills > .graph > .pi-chart > .outer-circle > .labels::before {
-    font-size: 18px;
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .javascript {
-    top: 0%;
-    right: -40%;
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .javascript > img {
-    top: 111%;
-    left: 10%;
-    transform: scaleX(-1) rotateZ(270deg);
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .python {
-    bottom: -6%;
-    right: -26%;
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .python > img {
-    top: -78%;
-    left: 10%;
-    transform: rotateZ(76deg);
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .reactjs {
-    bottom: -6%;
-    left: -28%;
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .reactjs > img {
-    top: -78%;
-    right: 10%;
-    transform: scaleX(-1) rotateZ(90deg);
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .nodejs {
-    top: 0%;
-    left: -32%;
-  }
-
-  .skills > .graph > .pi-chart > .outer-circle > .nodejs > img {
-    top: 112%;
-    right: 10%;
-    transform: rotateZ(270deg);
+    font-size: 16px;
   }
 
   .skills > .graph > .markers {
@@ -262,20 +232,5 @@
 
   .skills > .graph > .markers > p {
     font-size: 22px;
-  }
-}
-
-@media (width >= 1220px) {
-  .skills > .graph {
-    flex-direction: row;
-    padding-inline: 42px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .skills > .graph > .pi-chart {
-    flex-grow: 0;
-    padding-inline: 114px;
-    padding-block: 14px;
   }
 }

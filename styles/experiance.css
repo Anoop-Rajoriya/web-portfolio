@@ -22,7 +22,7 @@
   color: var(--white);
   font-family: roboto-slab;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.6;
 }
@@ -80,71 +80,106 @@
   color: var(--white);
 }
 
-@media (width > 400px) {
-  .experiance > .custom-elm {
-    font-size: 112px;
+@media (width >= 480px) {
+  .experiance > .icon + p {
+    color: var(--white);
+    font-size: 22px;
   }
+
+  .experiance > .custom-elm {
+    color: var(--accent);
+    font-size: 122px;
+  }
+
   .experiance > .custom-elm > span {
     font-size: 22px;
-    top: 48px;
-    left: 40px;
+    top: 54px;
+    left: 47px;
   }
+
   .experiance > .p-tags {
     font-size: 16px;
   }
+
+  .experiance > .svg-container > img {
+    --size: 70%;
+  }
 }
 
-@media (width > 1020px) {
-  .experiance {
-    padding-inline: 16px;
-    padding-block: 22px;
-  }
+@media (width >= 580px) {
   .experiance > .icon + p {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .experiance > .custom-elm {
-    font-size: 152px;
+    font-size: 138px;
   }
 
   .experiance > .custom-elm > span {
-    font-size: 30px;
-    top: 68px;
-    left: 56px;
+    font-size: 26px;
+    top: 62px;
+    left: 50px;
   }
 
   .experiance > .p-tags {
     font-size: 18px;
   }
 
-  .experiance > .svg-container {
-    padding-block: 16px;
-  }
-
   .experiance > .svg-container > img {
     --size: 60%;
   }
-
-  .experiance > .svg-container > p {
-    font-size: 26px;
-  }
 }
 
-@media (width >= 1220px) {
+@media (width >= 641px) {
+  .experiance > .icon {
+    --size: 18px;
+  }
   .experiance > .icon + p {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .experiance > .custom-elm {
-    margin-block-start: 0px;
+    color: var(--accent);
+    font-size: 118px;
   }
 
-  .experiance > .p-tags {
+  .experiance > .custom-elm > span {
+    font-size: 21px;
+    top: 56px;
+    left: 42px;
+  }
+}
+
+@media (width >= 800px) {
+  .experiance > .icon + p {
     font-size: 22px;
   }
 
-  .experiance > .svg-container > img {
-    --size: 45%;
-    margin-bottom: 16px;
+  .experiance > .custom-elm {
+    color: var(--accent);
+    font-size: 118px;
+  }
+
+  .experiance > .custom-elm > span {
+    font-size: 21px;
+    top: 56px;
+    left: 42px;
+  }
+}
+
+@media (width >= 1080px) {
+  .experiance > .icon + p {
+    font-size: 26px;
+  }
+
+}
+
+@media (width >= 1280px) {
+  .experiance > .p-tags{
+    font-size: 22px;
+  }
+
+  .experiance > .svg-container > img{
+    --size: 44%;
   }
 }

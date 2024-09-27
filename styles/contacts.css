@@ -44,31 +44,23 @@
   text-decoration: none;
 }
 
-@media (width > 400px) {
-  .contacts > .contact .name {
-    font-size: 22px;
-  }
+@media (width >= 480px) {
   .contacts > .contact a {
     font-size: 16px;
   }
 }
 
-@media (width > 1020px) {
-  .contacts {
-    padding-inline: 18px;
+@media (width >= 480px) {
+  .contacts > .contact .name {
+    font-size: 20px;
   }
-  .contacts > .contact {
-    padding-block: 6px;
-  }
-  .contacts > .contact > .icon {
-    --size: 32px;
-  }
-
-  .contacts > .contact > div {
-    padding-inline-start: 6px;
-  }
-
   .contacts > .contact a {
     font-size: 18px;
+  }
+}
+
+@media (width >= 641px) {
+  .contacts > .contact a {
+    font-size: 16px;
   }
 }
